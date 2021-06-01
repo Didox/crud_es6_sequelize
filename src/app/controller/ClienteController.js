@@ -21,7 +21,7 @@ class ClienteController {
     const cliente = await Cliente.findAll();
 
     if (!cliente) {
-      return res.status(401).json({ error: "Nenhum cliente foi encontrado. " });
+      return res.status(401).json({ error: "Nenhum cliente foi encontrado." });
     }
 
     return res.status(200).json(cliente);
