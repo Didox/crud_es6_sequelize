@@ -4,7 +4,7 @@ import Cliente from "../models/Cliente";
 
 class ClienteController {
   async store(req, res) {
-    const clienteExiste = await Cliente.findOne({ where: { email: email } });
+    const clienteExiste = await Cliente.findOne({ where: { email: req.body.email } });
 
     if (clienteExiste) {
       return res.status(401).json({ error: "E-mail já foi cadastrado" });

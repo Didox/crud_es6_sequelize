@@ -28,6 +28,7 @@
 ```github
 git clone <url>
 yarn
+yarn sequelize db:create
 yarn sequelize db:migrate
 yarn dev
 ```
