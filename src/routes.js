@@ -6,6 +6,7 @@ import ClientesController from "./app/controller/ClienteController";
 
 const routes = new Router();
 
+routes.get("/", ClientesController.index);
 routes.post("/clientes", ClientesController.store);
 routes.get("/clientes", ClientesController.index);
 routes.put("/clientes/:id", ClientesController.update);

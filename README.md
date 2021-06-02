@@ -39,6 +39,12 @@ yarn run build
 yarn start
 ```
 
+#### Gerar migração
+```github
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+```
+
+
 #### Observação
 
 **Criar arquivo .env na raiz do repositório e incluir as variáveis de ambiente para conexão com o banco postgres ou o branco de sua escolha.**
