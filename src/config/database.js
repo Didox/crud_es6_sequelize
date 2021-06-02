@@ -1,6 +1,6 @@
 require("dotenv/config");
 
-module.exports = {
+var dbConfig = {
   dialect: "postgres",
   host: process.env.DB_HOST,
   username: process.env.DB_USER,
@@ -10,11 +10,15 @@ module.exports = {
     timestamps: true,
     underscored: true,
     underscoredAll: true,
-  },
-  dialectOptions: {
+  }
+};
+
+if(process.env.NODE_ENV == "production"){
+  dbConfig.dialectOptions = {
     ssl: {
       require: true,
       rejectUnauthorized: false
     }
   }
-};
+}
+module.exports = dbConfig

@@ -36,6 +36,3 @@ yarn dev
 #### Observação
 
 **Criar arquivo .env na raiz do repositório e incluir as variáveis de ambiente para conexão com o banco postgres ou o branco de sua escolha.**
-
-
-npm install sequelize -g && npx sequelize db:migrate
