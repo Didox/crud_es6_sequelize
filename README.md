@@ -33,6 +33,12 @@ yarn sequelize db:migrate
 yarn dev
 ```
 
+#### Modo produção
+```github
+yarn run build
+yarn start
+```
+
 #### Observação
 
 **Criar arquivo .env na raiz do repositório e incluir as variáveis de ambiente para conexão com o banco postgres ou o branco de sua escolha.**
